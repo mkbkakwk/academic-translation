@@ -1,0 +1,68 @@
+<!-- 每块复制此骨架与 CSS，替换所有示例；重复意群、框、单元，按角色色覆盖 .f1 边框/.fb 底色/.ul 文字色。末单元 .nob。原文中的 HTML 特殊字符须转义。
+角色配色（沿用 v4）：
+主语: #185FA5
+谓语: #993C1D
+宾语／表语／并列项: #0F6E56
+宾语补足语／主语补足语: #993556
+定语／从句: #534AB7
+状语: #854F0B
+连词／标题／公式／引出／序号: #5F5E5A
+同位语／插入语: #7F77DD
+先行词／定语从句: #BA7517
+重点高亮底: #FAEEDA（文字 #B45309）
+本文自提方法橙条: #EF9F27
+特殊类：.rc 从句框，.ant 先行词，.abdg 先行词徽章，.rcl 指代说明，.prop 自提方法，.hl 对照高亮，.key 成品高亮，.cite 引用。
+-->
+<div class="tt">
+<style>
+.tt{font-family:ui-sans-serif,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--tt-primary);}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+.prod{margin-bottom:18px;padding:12px 14px 14px;border:1px solid var(--tt-border);border-radius:12px;}
+.bt{font-size:13px;font-weight:500;margin-bottom:8px;}
+.badge{display:inline-block;background:#2C2C2A;color:#fff;border-radius:4px;padding:1px 8px;font-size:11.5px;font-weight:500;}
+.zh{font-size:15px;line-height:1.8;margin-top:6px;}
+.zh .key{color:#B45309;font-weight:500;}
+.h{font-size:11.5px;font-weight:500;color:var(--tt-tertiary);letter-spacing:.05em;margin-bottom:8px;}
+.eh{font-size:11.5px;color:var(--tt-tertiary);margin:0 0 8px;}
+.eh b{font-weight:500;color:var(--tt-primary);}
+.dv{border-top:.5px solid var(--tt-rule);margin:10px 0 12px;}
+.f1{display:inline-block;vertical-align:top;border:1px solid #185FA5;border-radius:10px;padding:8px 10px 4px;margin:0 10px 14px 0;}
+.fb{display:block;width:fit-content;background:#185FA5;color:#fff;border-radius:4px;padding:1px 7px;font-size:11.5px;font-weight:500;margin-bottom:6px;}
+.u{display:inline-block;vertical-align:top;padding:0 7px 2px 0;margin:0 8px 8px 0;border-right:.5px dashed var(--tt-border);}
+.u.nob{border-right:none;}
+.ul{font-size:12px;font-weight:500;margin-bottom:2px;}
+.ue{font-size:15px;color:var(--tt-secondary);}
+.uc{font-size:15px;color:var(--tt-primary);}
+.hl{background:#FAEEDA;border-radius:2px;padding:0 2px;color:#B45309;font-weight:500;}
+.cite{font-size:11px;color:var(--tt-tertiary);vertical-align:super;}
+.lg{font-size:12px;color:var(--tt-secondary);margin-top:4px;line-height:1.9;}
+.lg i{font-style:normal;margin-right:4px;}
+.note{font-size:11.5px;color:var(--tt-tertiary);line-height:1.7;margin-top:10px;padding-top:8px;border-top:.5px dashed var(--tt-rule);}
+.rc{border:2px dashed #BA7517;}
+.rc .fb{background:#BA7517;}
+.rcl{font-size:11.5px;color:#BA7517;margin:2px 0 6px;display:block;}
+.ant{border-left:2.5px solid #BA7517;padding-left:5px;}
+.abdg{display:inline-block;background:#BA7517;color:#fff;border-radius:3px;padding:0 5px;font-size:10.5px;margin-left:4px;vertical-align:1px;}
+.prop{border-left:2px solid #EF9F27;padding-left:6px;}
+/* DSH compatibility: host aliases if available, otherwise color-scheme fallbacks. */
+.tt{--tt-primary:var(--color-text-primary,#1f2328);--tt-secondary:var(--color-text-secondary,#57606a);--tt-tertiary:var(--color-text-tertiary,#737980);--tt-border:var(--color-border-secondary,#b8bec5);--tt-rule:var(--color-border-tertiary,#d9dde1);overflow-wrap:anywhere;}
+.tt *,.tt *::before,.tt *::after{box-sizing:border-box;}
+.tt .f1,.tt .u{max-width:100%;}
+.tt .ue,.tt .uc{overflow-wrap:anywhere;}
+@media(prefers-color-scheme:dark){.tt{--tt-primary:var(--color-text-primary,#e6edf3);--tt-secondary:var(--color-text-secondary,#b1bac4);--tt-tertiary:var(--color-text-tertiary,#a0a8b1);--tt-border:var(--color-border-secondary,#626970);--tt-rule:var(--color-border-tertiary,#41474d);}.tt .hl{background:#49351b;color:#efb66c;}.tt .zh .key{color:#efb66c;}.tt .ul{filter:brightness(1.45);}}
+</style>
+<h2 class="sr">块一 · 语义标题</h2>
+<div class="prod">
+<div class="bt">【块一 · 语义标题】</div>
+<span class="badge">成品 · 中文译文</span>
+<div class="zh">……完整中文译文，<span class="key">重点词</span>……</div>
+</div>
+<div class="h">逐片段对照</div>
+<div class="eh"><b>意群 1</b> · 功能 — 一句话概括</div>
+<div class="f1" style="border-color:#854F0B;">
+<span class="fb" style="background:#854F0B;">状语（让步·Despite）</span>
+<div class="u nob"><div class="ul" style="color:#854F0B;">状语（让步·介词短语）</div><div class="ue">Despite the cost</div><div class="uc">尽管代价不小</div></div>
+</div>
+<div class="lg"><i style="color:#185FA5;">■</i>主语　<i style="color:#993C1D;">■</i>谓语　<i style="color:#0F6E56;">■</i>宾语／表语　<i style="color:#854F0B;">■</i>状语　<i style="background:#FAEEDA;color:#B45309;">■</i>重点</div>
+<div class="note">原文瑕疵、判定理由、术语取舍写在这里。</div>
+</div>

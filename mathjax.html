@@ -1,0 +1,9 @@
+<!-- 含公式的片段：将下列脚本追加在模板正文后，每个 iframe 一次。无公式不用。MathJax CDN 方案待本机测试；失败时保留 LaTeX。 -->
+<script>
+window.MathJax = {
+  loader: {paths: {mathjax: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5"}},
+  tex: {inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']], packages: {'[+]': ['ams', 'boldsymbol']}},
+  startup: {typeset: true}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml-full.js"></script>
